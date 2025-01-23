@@ -111,7 +111,7 @@ Reach out to me through my e-mail.
 
 Have questions, feedback, or suggestions? Reach out to me!
 
-- **GitHub**: [Your GitHub Profile](https://github.com/your-username)
+- **GitHub**: [VishnuKompelly](https://github.com/VishnuKompelly)
 - **Email**: vishnuvardhanreddykompelly@gmail.com
 
 Let’s learn and grow together! 🚀
