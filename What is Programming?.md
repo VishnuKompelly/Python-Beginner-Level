@@ -54,11 +54,12 @@ Programming has evolved significantly over the years. Let’s take a look at how
 10101011 11001101
 ```
 This might mean something simple like "add two numbers," but it’s hard to read and write for humans.
+To you and me, this is only a series of 0s and 1s. To a CPU, however, this is an instruction to perform an operation.1 It is written in 0s and 1s because CPUs only understand instructions that are written in machine language, and machine language instructions always have an underlying binary structure.
 
 ## 2. Assembly Language
 
-To simplify programming, assembly language was introduced. 
-Instead of writing in binary, programmers used mnemonics (short, human-readable instructions) that mapped directly to machine instructions.
+Although a computer’s CPU only understands machine language, it is impractical for people to write programs in machine language. For this reason, assembly language was created in the early days of computing as an alternative to machine language. Instead of using binary numbers for instructions, assembly language uses short words that are known as mnemonics. 
+Forexample, in assembly language, the mnemonic add typically means to ```add``` numbers, ```mul``` typically means to multiply numbers, and ```mov``` typically means to move a value to a location in memory. When a programmer uses assembly language to write a program, he or she can write short mnemonics instead of binary numbers.
 
 ### Example of Assembly Code:
 ```assembly
@@ -68,19 +69,26 @@ ADD A, C  # Add the value in C to A
 
 ## 3. High-Level Languages
 
-In the 1950s and 60s, high-level languages like Fortran and Algol were developed. These languages allowed programmers to write code closer to human language, making it easier to understand and manage.
+In the 1950s, a new generation of programming languages known as high-level languages began to appear. A high-level language allows you to create powerful and complex programs without knowing how the CPU works, and without writing large numbers of low-level instructions. In addition, most high-level languages use words that are easy to understand.
+For example, if a programmer were using COBOL (which was one of the early high-level languages created in the 1950s), he or she would write the following instruction to display the message Hello world on the computer screen:
+```
+DISPLAY "Hello world"
+```
+Python is a modern, high-level programming language that we will use in this course. 
+In Python you would display the message Hello world with the following instruction:
+```
+print 'Hello world'
+```
+- Not only python there are many high-level languages such as C, C++, Java, JavaScrpt, Ruby and so on.
 
-Features of High-Level Languages:
-- Portability: Programs could run on different machines without rewriting.
-- Structure: Introduced subroutines and loops, making programs easier to organize.
-- Ease of Use: Focused on the programmer's logic rather than the computer’s details.
+- Each high-level language has its own set of predefined words that the programmer must use to write a program. The words that make up a high-level programming language are known as key words or reserved words. Each key word has a specific meaning, and cannot be used for any other purpose. You previously saw an example of a Python statement that uses the key word ```print``` to print a message on the screen. 
+
+
 
 ## 4. Compilers and Interpreters
-High-level languages need to be translated into machine language before a computer can execute them. This translation is done in two ways:
-
-- Compiler: Translates the entire program into machine code before running it (e.g., C, Java).
-- Interpreter: Translates and runs code line-by-line, allowing for quicker testing (e.g., Python, MATLAB).
-
+Because the CPU understands only machine language instructions, programs that are written in a high-level language must be translated into machine language. Depending on the language that a program has been written in, the programmer will use either a compiler or an interpreter to make the translation.
+- Compiler : A compiler is a program that translates a high-level language program into a separate machine language program. The machine language program can then be executed any time it is needed. Compiling and executing are two different processes.
+- Interpreter : The Python language uses an interpreter, which is a program that both translates and executes the instructions in a high-level language program. As the interpreter reads each individual instruction in the program, it converts it to machine language instructions and then immediately executes them. This process repeats for every instruction in the program. Because interpreters combine translation and execution, they typically do not create separate machine language programs.
 
 ##  Here's a quick overview:  
 
@@ -92,4 +100,6 @@ High-level languages need to be translated into machine language before a comput
 
 ---
 
+
+# In the next parts we shall discuss the next parts in the Python Programming language
 
